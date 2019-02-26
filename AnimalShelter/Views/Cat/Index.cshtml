@@ -1,0 +1,13 @@
+@using AnimalShelter.Models;
+
+<h1>List of Cats</h1>
+
+@foreach (Cat cat in @Model)
+{
+<h2> Name: @cat.GetName()</h2>
+<ul>
+<li>Breed: @cat.GetBreed()</li>
+<li>Sex: @cat.GetSex()</li>
+<li>Admission: @cat.GetAdmissionDate()</li>
+</ul>
+}
